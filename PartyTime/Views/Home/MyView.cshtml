@@ -1,19 +1,29 @@
 ﻿@{
-    Layout = null;
+Layout = null;
 }
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
+
 <body>
-    <div>
-        @ViewBag.Greeting, GitHub stalkers! (from the view)
-        <p>
-            <h1>I'm getting married in Halo 3 and you're invited.<br /></h1>
-        </p>
-        <a asp-action="RSVP">RSVP before you get splattered by a ghost, the respawn time is set to 30 seconds in this mode.</a>
-    </div>
+    <div class="text-center">
+
+        <div>
+            @ViewBag.Greeting n00bs (from the view)
+            <p>
+                <h1>I'm getting Married in Halo 3 to my internet gf</h1>
+                <h2>
+                    Can you come?
+                </h2>        
+                <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
+                <br />
+
+            </p>
+
+        </div>
 </body>
 </html>

@@ -1,0 +1,27 @@
+﻿@model PartyInvites.Models.GuestResponse
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <p>
+        <h1>Good to hear, @Model.Name!</h1>
+        @if (Model.WillAttend == true)
+        {
+            @:I cant wait for you to witness my commitment to eternal love to a person I've never met or even skyped with!
+        }
+        else
+        {
+            @:Sorry to hear that you're too good for us, I guess we won't invite you to our Halo Infinite custom games.
+        }
+    </p>
+    Click <a class="nav-link" asp-action="ListResponses">here</a>
+    to see who in an MLG PRO.
+</body>
+</html>
